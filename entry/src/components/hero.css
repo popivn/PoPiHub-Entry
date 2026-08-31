@@ -1,0 +1,137 @@
+.hero-bg {
+  filter: brightness(0.4) saturate(1.2);
+  transition: filter 0.5s ease;
+}
+
+.hero-bg:hover {
+  filter: brightness(0.6) saturate(1.4);
+}
+
+.hero-main {
+  animation: hero-float 6s ease-in-out infinite;
+  filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes hero-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.hero-text-fade {
+  animation: hero-text-fade 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes hero-text-fade {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-text-fade-delay {
+  animation: hero-text-fade-delay 1.5s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+@keyframes hero-text-fade-delay {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-text-scroll {
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.hero-text-scroll.scrolled {
+  transform: translateY(10px);
+  opacity: 0.8;
+}
+
+.hero-bg-fade {
+  animation: hero-bg-fade 3s ease-out forwards;
+}
+
+@keyframes hero-bg-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-bg-1-anim {
+  animation: hero-bg-1-anim 2s ease-out forwards;
+}
+
+@keyframes hero-bg-1-anim {
+  from {
+    opacity: 0;
+    transform: translateY(-100vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-bg-2-anim {
+  animation: hero-bg-2-anim 2s ease-out 0.3s forwards;
+}
+
+@keyframes hero-bg-2-anim {
+  from {
+    opacity: 0;
+    transform: translateY(-100vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-bg-3-anim {
+  animation: hero-bg-3-anim 2s ease-out 0.6s forwards;
+}
+
+@keyframes hero-bg-3-anim {
+  from {
+    opacity: 0;
+    transform: translateY(-100vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-main-fade {
+  animation: hero-main-fade 2s ease-out 0.9s forwards;
+  opacity: 0;
+}
+
+@keyframes hero-main-fade {
+  from {
+    opacity: 0;
+    transform: translateY(-100vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
